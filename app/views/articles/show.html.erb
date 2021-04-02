@@ -1,11 +1,44 @@
-<h1>Showing Article Details</h1>
+<div id="page-content">
 
-<p><strong>Title: </strong> <%= @article.title %> </p>
+    <h2 class="text-center mt-4"> <%= @article.title %> </h2>
+   
+    <div class="container">
+        
+            <div class="row justify-content-md-center">
 
-<p><strong>Description: </strong> <%= @article.description %> </p>
+                <div class="col-8 mt-4">
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
+                    <div class="card text-center shadow mb-5 bg-white rounded">
 
-<%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %> |
+                    <div class="card-header font-italic">
 
-<%= link_to 'Return to Index', articles_path %>
+                        By Charles Palmer
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="card-text"><%= simple_format(@article.description) %></div>
+
+                        <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-info" %>
+                        
+                        <%= link_to "Delete", article_path(@article), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>
+
+                    </div>
+
+                    <div class="card-footer text-muted">
+
+                        <small>Created <%= time_ago_in_words(@article.created_at) %> ago,
+                        edited <%= time_ago_in_words(@article.updated_at) %> ago.</small>
+
+                    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        
+    </div>
+
+</div>
