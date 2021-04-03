@@ -1,24 +1,9 @@
-# README
+# Alpha-Blog-Ruby
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application was my first application built from the ground up with Ruby/Ruby on Rails 6.
 
-Things you may want to cover:
+The application allows for users to create article entrys, and once they're created, view, edit and delete them. This site has been styled with Bootstrap 4 elements.  
 
-* Ruby version
+# TECHNOLOGIES USED
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+HTML, SCSS, Bootstrap 4, Ruby, Ruby On Rails 6, Git, Heroku. 
